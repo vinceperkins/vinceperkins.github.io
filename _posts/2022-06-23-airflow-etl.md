@@ -259,9 +259,9 @@ Running the tasks:
    2. Right-click on task 0 and select run. The remaining tasks will then complete in order.
     
 The image below shows the tasks running in Airflow.
-![DAG Tasks](/posts/20220610/airflow_tasks.png){: width="1086" height="542"}
+![DAG Tasks](/posts/20220610/airflow-tasks.png){: width="1086" height="542"}
 
 ## Conclusion
 
-With Airflow we can automate command lines and python functions on a set schedule. This could provide a more streamlined workflow for teams of analysts in any industry. The project files can be downloaded at ![Github](https://github.com/vinceperkins/airflow-web-scraping-pipeline).
+With Airflow we can automate command lines and python functions on a set schedule. This could provide a more streamlined workflow for teams of analysts in any industry. The project files can be downloaded on [Github](https://github.com/vinceperkins/airflow-web-scraping-pipeline).
 

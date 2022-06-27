@@ -302,15 +302,7 @@ The java files within *\DebeziumCDC\app\src\main\java\mit\edu\tv\listener* allow
 
 ## Conclusion
 
-The flow chart below summarizes the process of capturing data from the MBTA API and propagating that data to a MySQL database and MongoDB database. The project files can be downloaded at ![Github](https://github.com/vinceperkins/mbta-transit-data-tracking-web-app). 
+The flow chart below summarizes the process of capturing data from the MBTA API and propagating that data to a MySQL database and MongoDB database. The project files can be downloaded on [Github](https://github.com/vinceperkins/mbta-transit-data-tracking-web-app). 
 
 ![Dataflow](/posts/20220624/dataflow.png){: width="1086" height="542"}
 
-
-
-
-## Reference
-
-[^ga-filters]: [Google Analytics Core Reporting API: Filters](https://developers.google.com/analytics/devguides/reporting/core/v3/reference#filters)
-
-[chirpy-homepage]: https://github.com/cotes2020/jekyll-theme-chirpy/
