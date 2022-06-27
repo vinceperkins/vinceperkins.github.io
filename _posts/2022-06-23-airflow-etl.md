@@ -27,7 +27,7 @@ C:\Users\VP1050\OneDrive\Documents> docker-compose up
 
 The default airflow credentials are * airflow * for username and password. This example will run on localhost:8080. 
 
-![Airflow UI](/posts/20220610/airflow_ui.png){: width="1086" height="542"}
+![Airflow UI](/posts/20220610/airflow-ui.png){: width="1086" height="542"}
 
 ## Data Extraction in Airflow DAG (Directed Acyclic Graph)
 
@@ -263,5 +263,5 @@ The image below shows the tasks running in Airflow.
 
 ## Conclusion
 
-With Airflow we can automate command lines and python functions on a set schedule. This could provide a more streamlined workflow for teams of analysts in any industry. 
+With Airflow we can automate command lines and python functions on a set schedule. This could provide a more streamlined workflow for teams of analysts in any industry. The project files can be downloaded at ![Github](https://github.com/vinceperkins/airflow-web-scraping-pipeline).
 
