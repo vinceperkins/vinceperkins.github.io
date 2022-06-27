@@ -22,7 +22,7 @@ The Massachusetts Bay Transportation Authority offers free access to an API that
      1. Change data capture (CDC)  is necessary to propagate changes from the master database to other databases. We will use Debezium to monitor changes to the MySQL database and propagate the changes to a MongoDB database.
 
 
-## Set up Application Databases 
+## Setup Application Databases 
 
 ### Create Docker Network
 
@@ -168,7 +168,7 @@ Within Docker, the container will show as below:
 ![mysqlmongo](/posts/20220624/mongodocker.png){: width="1086" height="542"}
 
 
-## Set up Web Application Environment
+## Setup Web Application Environment
 ### Create Python Flask Web Server to call MBTA API
 The server file will import the previously created **MBTAApiClient.py** file. 
 ```python
