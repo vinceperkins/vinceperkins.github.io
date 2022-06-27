@@ -12,6 +12,6 @@ You will find posts about my technical hobbies and pursuits. I will share proces
 3. 3D modeling
 4. Algorithmic stock trading
 
-Currently I am  transitioning towards a career in data engineering where I want to hone my programming skills and provide value through continuous improvement and workflow automation. 
+Currently I am  transitioning towards a career in data engineering where I want to hone my programming skills and provide value through continuous improvement and workflow automation. As of June 2022 I completed the MIT xPRO Professional Certificate in Data Engineering to broaden my technical skill set. 
 
 [Vincent Perkins](https://www.linkedin.com/in/vincentfperkins/) 
