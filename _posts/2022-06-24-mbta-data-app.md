@@ -1,16 +1,16 @@
 ---
 title: Building a Flask Web App to Track Public Transit
 author: Vincent Perkins
-date: 2021-06-24 11:33:00 +0800
+date: 2022-06-24 11:33:00 +0800
 categories: [Blogging, Web Programming]
 tags: [GPS, latitude, longitude, flask, debezium, MySQL]
 math: true
 mermaid: true
 image:
-  path: /posts/mapbox.png
+  path: /posts/20220624/mapbox.png
   width: 800
   height: 500
-  alt: Responsive rendering of Chirpy theme on multiple devices.
+  alt: Mapbox render output
 ---
 
 The Massachusetts Bay Transportation Authority offers free access to an API that allows a user  to track locations of busses within the MBTA system. The goal of this project was threefold: 
@@ -252,14 +252,18 @@ We run the application by running the previously created **server.py** file.
 ```console
 C:\Users\VP1050\OneDrive\Documents> python3 server.py
 ```
-The output should show the timestamp and each bus with the accompanying attributes. The insertMBTARecord() funcion in the [MBTAApiClient.py](#sqlclient) file will save the output to the MySQL database. 
+The output should show the timestamp and each bus with the accompanying attributes. The insertMBTARecord() function in the [MBTAApiClient.py](#sqlclient) file will save the output to the MySQL database.
 ![mysqldocker](/posts/20220624/server_output.png){: width="1086" height="542"}
+
+We can also check for the visual representation of bus location updates by going to localhost:3000 in a web browser.
+![mapbox_output](/posts/20220624/mapbox.png){: width="1086" height="542"}
+
 
 ## Setup Change Data Capture with Debezium
 
 ### Create Debezium Container
 
-We will create a third docker container to communicate changes made from the MySQL database to the MongoDB database. 
+We will create a third docker container to communicate updates from the MySQL database to the MongoDB database. 
 
 ```dockerfile
 FROM maven:3.6.3-openjdk-11 AS maven_build
@@ -279,14 +283,14 @@ C:\Users\VP1050\OneDrive\Documents> docker run -it -rm --debeziumserver --networ
 
 ### Edit Debezium Configuration files
 
-Note the settings in the DebeziumConnectorConfig.java file within * *\DebeziumCDC\app\src\main\java\mit\edu\tv\config* *. The database.port and database.password should be the same as the docker container running the MySQL database:
+Note the settings in the DebeziumConnectorConfig.java file within *\DebeziumCDC\app\src\main\java\mit\edu\tv\config*. The database.port and database.password should be the same as the docker container running the MySQL database:
 ```java
         return io.debezium.config.Configuration.create().
             .with("database.port", 3306)
             .with("database.password", "MyNewPass")
 ```
 
-The java files within * *\DebeziumCDC\app\src\main\java\mit\edu\tv\listener* * allow the MongoDB to listen to changes within the MySQL database. 
+The java files within *\DebeziumCDC\app\src\main\java\mit\edu\tv\listener* allow the MongoDB to listen to changes within the MySQL database. 
 
 ### Confirm changes in the MongoDB database
 
@@ -298,7 +302,7 @@ The java files within * *\DebeziumCDC\app\src\main\java\mit\edu\tv\listener* * a
 
 ## Conclusion
 
-The flow chart below summarizes the process of capturing data from the MBTA API and propogating that data to a MySQL database and MongoDB database. 
+The flow chart below summarizes the process of capturing data from the MBTA API and propagating that data to a MySQL database and MongoDB database. 
 
 ![Dataflow](/posts/20220624/dataflow.png){: width="1086" height="542"}
 
