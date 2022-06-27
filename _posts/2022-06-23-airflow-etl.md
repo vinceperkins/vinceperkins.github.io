@@ -1,19 +1,19 @@
 ---
-title: Building an Airflow Data Pipeline
+title: Airflow DAG Data Pipeline
 author: Vincent Perkins
 date: 2022-06-10 19:25:00 +0800
 categories: [Blogging, ETL]
-tags: [Airflow, Web Scraping, JavaScript]
+tags: [Airflow, Web Scraping, JavaScript, Parsing]
 math: true
 mermaid: true
 image:
-  path: /posts/20220610/mapbox.png
+  path: /posts/20220610/airflow-tasks.png
   width: 800
   height: 500
-  alt: Airflow Processes
+  alt: Airflow Tasks
 ---
 
-Experience as a manufacturing engineer has taught me the importance of having well organized data at-the-ready. The goal of data analysis should be to create a pipeline that can be reused instead of spending time on manual data manipulation. We will demonstrate manipulating data from a college course catalogue. The goal of this project was to design a process that could automate data scraping, data parsing, and data analysis. We will be gathering the total word count per word across multiple webpages. 
+Experience as a manufacturing engineer has taught me the importance of having well organized data at-the-ready. The goal of data analysis should be to create a pipeline that can be reused instead of spending time on manual data manipulation. In this project we will review the DAG python file used by Airflow to demonstrate manipulating data from a college course catalogue. The goal of this project was to design a process that could automate data scraping, data parsing, and data analysis. Analysis will consist of gathering the total word count per title across multiple webpages. 
 
 ## Setup Airflow
 
@@ -29,13 +29,13 @@ The default airflow credentials are * airflow * for username and password. This 
 
 ![Airflow UI](/posts/20220610/airflow_ui.png){: width="1086" height="542"}
 
-## Design Data Extraction in Airflow DAG (Directed Acyclic Graph)
+## Data Extraction in Airflow DAG (Directed Acyclic Graph)
 
-Workflows within Airflow consist of operators. These operators provide the framework for task automation. Each task requires an operator to define how the task should be run. The main focus will be the Python Operator which allows for automated calling of Python functions.
+Workflows within Airflow consist of operators. These operators provide the framework for task automation. Each task requires an operator to define how the task should be run. The main focus will be the Python Operator which allows for automated calling of Python functions. All of the code snippets in this post are included in a single python file acting as an Airflow DAG. 
 
 ### Extracting Web Data
 
-Import statements required for airflow are under #The Dag Object commment.
+Import statements required for airflow are under #The Dag Object comment.
 
 ```python
 #The DAG Object
@@ -83,7 +83,7 @@ def catalog():
         time.sleep(11)
 ```
 
-## Design Data Transformation in Airflow DAG
+## Data Transformation in an Airflow DAG
 
 ### Combine Data Files
 The fun begins in transforming the data. Since we are searching for total word count across all url titles, we will start by combining the files from each scraped url:
