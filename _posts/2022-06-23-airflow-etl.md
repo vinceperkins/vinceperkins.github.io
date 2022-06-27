@@ -23,7 +23,7 @@ We will first install Airflow in a docker container. If we navigate to the same 
 ```console
 C:\Users\VP1050\OneDrive\Documents> docker-compose up
 ```
-![Docker Desktop](/posts/20220610/airflow_docker.png){: width="1086" height="542"}
+![Docker Desktop](/posts/20220610/airflow-docker.png){: width="1086" height="542"}
 
 The default airflow credentials are * airflow * for username and password. This example will run on localhost:8080. 
 
