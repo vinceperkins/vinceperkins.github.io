@@ -48,7 +48,7 @@ First we need to install kafka-python.
 C:\Users\VP1050\OneDrive\Documents> pip install kafka-python
 ```
 
-Next, we will create a python script to send data to the Kafka broker. In the PublishVehicleCoordinates.py file, we first define variables needed to specify the Kafka server. 
+Next, we will create a python script to send data to the Kafka broker. In the *PublishVehicleCoordinates.py* file, we first define variables needed to specify the Kafka server. 
 ```python
 '''PublishVehicleCOordinates.py'''
 import kafka
@@ -122,7 +122,7 @@ Also, ensure that [Node.js](https://nodejs.org/en/download/) is installed on you
 
 ### Defining the Kafka Consumer
 
-We will borrow from [Confluent example code](https://github.com/confluentinc/examples/blob/6.0.5-post/clients/cloud/nodejs/consumer.js) to define a function that subscribes to a topic and consumes data. We wil add 1 line to the myconsumer function to return the response. We will add another line of code outside of the myconsumer function so that the function can be executed by a Node.js server file within the same directory. 
+We will borrow from [Confluent example code](https://github.com/confluentinc/examples/blob/6.0.5-post/clients/cloud/nodejs/consumer.js) to define a function that subscribes to a topic and consumes data. We wil add 1 line to the *myconsumer* function to return the response. We will add another line of code outside of the *myconsumer* function so that the function can be executed by a javascript file within the same directory. 
 
 ```js
 //myconsumer.js
@@ -186,11 +186,11 @@ Next, let's start the node.js server.
 ```console
 C:\Users\VP1050\OneDrive\Documents> node server.js
 ```
-The app is listening on localhost:5000. The data is already being produced if the python file in the first step is running. We can now run the app and consume data by clicking the "Consume Vehicle Coordinates" button.
+The app is listening on localhost:5000. The data is already being produced if the python file in the first step is running. We can now run the app and consume data by clicking the "Consume Vehicle Coordinates" button: 
 
 ![CONSUME](/posts/20220620/consume-button.png)
 
-We can view the data consumed in the console window running the server.js file. The data is also visible in the Confluent dashboard.
+We can view the data consumed in the console window running the *server.js* file. The data is also visible in the Confluent dashboard:
 
 ![Consume Output](/posts/20220620/consume-output.png)
 
