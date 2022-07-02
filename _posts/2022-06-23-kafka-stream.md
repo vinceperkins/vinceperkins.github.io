@@ -2,7 +2,7 @@
 title: Constructing a Web Server Using Kafka
 author: Vincent Perkins
 date: 2022-06-30 16:30:00 +0800
-categories: [Blogging, Streaming, Kafka]
+categories: [Blogging, Streaming, Kafka, Data Engineering]
 tags: [Kafka, Web Server, JavaScript, Python]
 math: true
 mermaid: true

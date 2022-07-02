@@ -2,7 +2,7 @@
 title: Airflow DAG Data Pipeline
 author: Vincent Perkins
 date: 2022-06-10 19:25:00 +0800
-categories: [Blogging, ETL]
+categories: [Blogging, Data Engineering, ETL]
 tags: [Airflow, Web Scraping, JavaScript, Parsing]
 math: true
 mermaid: true

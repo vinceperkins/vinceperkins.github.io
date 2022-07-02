@@ -2,7 +2,7 @@
 title: Building a Flask Web App to Track Public Transit
 author: Vincent Perkins
 date: 2022-06-24 11:33:00 +0800
-categories: [Blogging, Web Programming]
+categories: [Blogging, Web Programming, Data Engineering]
 tags: [GPS, latitude, longitude, flask, debezium, MySQL]
 math: true
 mermaid: true
