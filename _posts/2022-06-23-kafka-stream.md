@@ -13,7 +13,7 @@ image:
   alt: Kafka
 ---
 
-Kafka is an open-source distributed event streaming platform. The Confluent platform seen in the project runs an enhanced distribution of Kafka designed for community and commercial use. Using Python, Javascript, and a docker Kafka installation we can produce data and then create a web server that initiates the data consumption process. can be output to the Kafka dashboard. 
+Kafka is an open-source distributed event streaming platform. The Confluent platform seen in the project runs an enhanced distribution of Kafka designed for community and commercial use. Using Python, Javascript, and a docker Kafka installation we can produce data and then create a web server that initiates the data consumption process.
 
 ## Setup Kafka Docker Container
 
@@ -27,16 +27,18 @@ C:\Users\VP1050\OneDrive\Documents> docker-compose up
 
 ### Creating a New Kafka Topic
 
-WIthin the Confluent webpage running on localhost:9021, under "Topics" we can add a new topic to send data to called 'vehicle-coordinates'. Create this topic with default settings. 
+WIthin the Confluent webpage running on **localhost:9021**, under "Topics" we can add a new topic to send data to called "vehicle-coordinates".
+This topic should be created with default settings:
 
 ![Confluent UI](/posts/20220630/kafka-add-topic.png){: width="1086" height="542"}
 
+In the picture below we see the new "vehicle-coordinates" topic:
 
 ![Confluent UI](/posts/20220630/kafka-topic.png){: width="1086" height="542"}
 
 ## Creating a kafka-python Producer to Send Sample Data
 
-The Kafka platform operates via producer and consumer. The producer creates the data to be sent to the Kafka server and also sends that data.
+The Kafka platform operates via producer and consumer. The producer creates and sends the data to the Kafka server.
 
 
 ### kafka-python Setup
