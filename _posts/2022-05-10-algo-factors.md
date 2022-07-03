@@ -1,5 +1,5 @@
 ---
-title: Building a Zipline Trading Algorithm with Pipeline Filter
+title: Building a Zipline Trading Algorithm with Custom Pipeline Factors
 author: Vincent Perkins
 date: 2022-05-10 16:30:00 +0800
 categories: [Blogging, Trading, Data Engineering]
