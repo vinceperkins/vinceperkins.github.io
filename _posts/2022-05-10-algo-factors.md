@@ -47,7 +47,7 @@ def initialize (context):
     vol = USEquityPricing.volume.latest
     ann_std = AnnualizedVolatility(annualization_factor = 252)
     rsi = RSI(window_length = 15)
-    bol252 = BollingerBands(window_length = 390, k = 2)
+    bol252 = BollingerBands(window_length = 252, k = 2)
 ```
 
 ### Custom Factor Definition
@@ -126,7 +126,7 @@ def initialize (context):
     vol = USEquityPricing.volume.latest
     ann_std = AnnualizedVolatility(annualization_factor = 252)
     rsi = RSI(window_length = 15)
-    bol252 = BollingerBands(window_length = 390, k = 2)
+    bol252 = BollingerBands(window_length = 252, k = 2)
     mean_pct_dif = NDayMeanPctDif(window_length = 5)
 
     #screening
