@@ -188,11 +188,11 @@ C:\Users\VP1050\OneDrive\Documents> node server.js
 ```
 The app is listening on localhost:5000. The data is already being produced if the python file in the first step is running. We can now run the app and consume data by clicking the "Consume Vehicle Coordinates" button: 
 
-![CONSUME](/posts/20220620/consume-button.png)
+![CONSUME](/posts/20220630/consume-button.png)
 
 We can view the data consumed in the console window running the *server.js* file. The data is also visible in the Confluent dashboard:
 
-![Consume Output](/posts/20220620/consume-output.png)
+![Consume Output](/posts/20220630/consume-output.png)
 
 
 ## Conclusion
