@@ -15,7 +15,7 @@ image:
 
 The Massachusetts Bay Transportation Authority offers free access to an API that allows a user  to track locations of busses within the MBTA system. The goal of this project was threefold: 
   1. To demonstrate a use case of location-based applications
-     1. The MBTA API will determine the position of buses (longitude and latitude) along Route 1 and the output will visualized using a flask web application running Mapbox. 
+     1. The MBTA API will determine the position of buses (longitude and latitude) along Route 1 and the output will be visualized using a flask web application running Mapbox. 
   2. Use web-development tools (Flask and Mapbox API) to visualize the data 
      1. A MySQL database will store the information retrieved from the MBTA API. We will periodically make calls to the MBTA API, parse the JSON data returned by the API, and insert new rows into the  My SQL table.
   3. Demonstrate change data capture (CDC) between two databases (MySQL to MongoDB using Debezium).
