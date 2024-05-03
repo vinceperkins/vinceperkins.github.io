@@ -4,13 +4,12 @@ icon: fas fa-info-circle
 order: 4
 ---
 <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-I am a graduate of Purdue University's School of Industrial Engineering and a former Production Control Engineer contractor at Toyota Motor Manufacturing Texas. I have a passion for the automotive industry, big data, and 3D modeling.You will find posts about my technical hobbies and pursuits. I will share processes, tutorials, and thoughts mostly on the following: 
+I am a graduate of Purdue University's School of Industrial Engineering and a former Production Control Engineer contractor at Toyota Motor Manufacturing Texas. After completing the MIT xPRO Professional Certificate in Data Engineering in June 2022, I started a positions as a Data Engineer at Kia America HQ in Irvine, CA. I have a passion for automotive, fintech, and big data. Here you will find posts about my technical hobbies and pursuits. I will share processes, tutorials, and thoughts mostly on the following: 
 1. Data engineering
 2. Video game design
-3. 3D modeling
-4. Algorithmic stock trading
+3. Algorithmic stock trading
 
-In February 2022, I left my current position to obtain a professional certificate in data engineering - a field that have grown more curious about during my time in the work force. Currently I am transitioning towards a career in data engineering where I want to provide value through continuous improvement and workflow automation. As of June 2022, I completed the MIT xPRO Professional Certificate in Data Engineering to broaden help my technical skill set and now seek a new position as a data engineer. 
+As of 2024 I continue to hone my technical skill set and research innovative tech stack solutions that I can apply at work or in my hobbies. 
 
  &nbsp;
  &nbsp;
