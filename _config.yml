@@ -23,7 +23,7 @@ timezone: America/Chicago
 
 title: Vincent Perkins                          # the main title
 
-tagline: Industrial Engineer   # it will display as the sub-title
+tagline: Data Engineer   # it will display as the sub-title
 
 description: A portfolio showcasing data analytics and data engineering projects.
 
